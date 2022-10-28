@@ -1,3 +1,4 @@
+from multiprocessing.connection import Listener
 from setuptools import setup
 
 package_name = 'first_pkg'
@@ -20,6 +21,11 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [  'Say_hello = first_pkg.py_talker:main',
+        'bolo = first_pkg.news_station:main',
+        'talker_2=first_pkg.2nd_news_station:main'
+        ,'Listener=first_pkg.sub:main'
+        ,"read=first_pkg.led_cont:main"
+        
         ],
     },
 )
