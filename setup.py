@@ -24,7 +24,8 @@ setup(
         'bolo = first_pkg.news_station:main',
         'talker_2=first_pkg.2nd_news_station:main'
         ,'Listener=first_pkg.sub:main'
-        ,"read=first_pkg.led_cont:main"
+        ,"read=first_pkg.led_cont:main",
+        "talker_3=first_pkg.talker_3:main"
         
         ],
     },
